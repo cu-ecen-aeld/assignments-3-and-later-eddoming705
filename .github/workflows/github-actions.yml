@@ -8,7 +8,6 @@ on:
       - '*'
 
 jobs:
-<<<<<<< HEAD
   unit-test:
     runs-on: ubuntu-latest
     container: cuaesd/aesd-autotest:24-unit-test
@@ -44,7 +43,6 @@ jobs:
           cd finder-app
           chmod +x finder-test.sh
           ./finder-test.sh
-=======
     unit-test:
         container: cuaesd/aesd-autotest:24-unit-test
         runs-on: self-hosted
@@ -54,4 +52,3 @@ jobs:
             run : git submodule update --init --recursive
           - name: Run unit test
             run: ./unit-test.sh
->>>>>>> assignments-base/assignment3-part-1
